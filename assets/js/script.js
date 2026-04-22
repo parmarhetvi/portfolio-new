@@ -157,3 +157,44 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+// EMAILJS Integration for Contact Form
+const contactForm = document.querySelector("[data-form]");
+const formMessage = document.getElementById("form-message");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const formBtn = contactForm.querySelector("[data-form-btn]");
+    formBtn.setAttribute("disabled", "");
+    if (formMessage) {
+      formMessage.textContent = "Sending...";
+      formMessage.style.color = "#fff";
+    }
+
+    emailjs.send(
+      "YOUR_SERVICE_ID", // <-- Replace with your EmailJS service ID
+      "YOUR_TEMPLATE_ID", // <-- Replace with your EmailJS template ID
+      {
+        user_name: contactForm.user_name.value,
+        user_email: contactForm.user_email.value,
+        subject: contactForm.subject.value,
+        message: contactForm.message.value
+      }
+    ).then(function () {
+      if (formMessage) {
+        formMessage.textContent = "Message sent successfully";
+        formMessage.style.color = "limegreen";
+      }
+      contactForm.reset();
+      formBtn.setAttribute("disabled", "");
+    }, function (error) {
+      if (formMessage) {
+        formMessage.textContent = "Failed to send message. Please try again.";
+        formMessage.style.color = "red";
+      }
+      formBtn.removeAttribute("disabled");
+    });
+  });
+}
