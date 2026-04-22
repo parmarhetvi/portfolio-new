@@ -1,43 +1,53 @@
-# vCard - Personal portfolio
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+# Hetvi Parmar - Personal Portfolio
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+A modern, responsive personal portfolio website built with **HTML**, **CSS**, and **JavaScript**.
 
 ## Demo
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+Desktop Demo:
+![Desktop Demo](website-demo-image/desktop.png)
 
-## Prerequisites
+Mobile Demo:
+![Mobile Demo](website-demo-image/mobile.png)
 
-Before you begin, ensure you have met the following requirements:
+## Features
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+- Clean, modern UI/UX
+- Responsive design for all devices
+- About, Resume, Projects, Experience, and Contact sections
+- Contact form with EmailJS integration
+- Social media links (LinkedIn, GitHub, Instagram)
+- Google Maps location embed
 
-## Installing vCard
+## Getting Started
 
-To install **vCard**, follow these steps:
+### Prerequisites
 
-Linux and macOS:
+- [Git](https://git-scm.com/downloads)
+
+### Installation
+
+Clone the repository:
 
 ```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
+git clone https://github.com/parmarhetvi/portfolio_new.git
 ```
 
-Windows:
+Open the folder in your code editor and launch `index.html` in your browser.
 
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+## Author
 
-## Contact
+**Hetvi Parmar**  
+- Email: [parmarhetvi20230@gmail.com](mailto:parmarhetvi20230@gmail.com)
+- Location: Bhavnagar, Gujarat, India
+- [LinkedIn](https://www.linkedin.com/in/hetvi-parmar-2a3089339)
+- [GitHub](https://github.com/parmarhetvi)
+- [Instagram](https://www.instagram.com/h_e_t_u_parmar_2316/)
 
-If you want to contact me you can reach me at [Twitter](https://www.x.com/codewithsadee_).
+## License
+
+This project is licensed under the MIT License.
 
 ## License
 
