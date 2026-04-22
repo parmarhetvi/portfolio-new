@@ -114,8 +114,8 @@ if (contactForm) {
     }
 
     emailjs.send(
-      "YOUR_SERVICE_ID",    // <-- Replace with your EmailJS Service ID
-      "YOUR_TEMPLATE_ID",   // <-- Replace with your EmailJS Template ID
+      "service_jihcrug",    // <-- Replace with your EmailJS Service ID
+      "template_izpfhub",   // <-- Replace with your EmailJS Template ID
       {
         user_name:  contactForm.user_name.value,
         user_email: contactForm.user_email.value,
